@@ -1,0 +1,12 @@
+img {
+  width: 300px;
+  height: 300px;
+  transform: translateX(-100px);
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(0);
+  }
+}

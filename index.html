@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Unchanged from-->
+  <main data-barba="wrapper">
+    <section data-barba="container" data-barba-namespace="logo1">
+      <img src="./l1.png" alt="">
+    </section>
+  </main>
+  <!-- to here -->
+  <a href="./">Logo 1</a>
+  <a href="./logo2.html">Logo 2</a>
+  <a href="./logo3.html">Logo 3</a>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script>
+    barba.init({
+      transition: [
+      {
+        name: 'Beautiful transition', 
+        leave(data) {
+          //console.log(data.trigger)
+          console.log(data.current.html)
+        }
+      }
+      ]
+    });
+  </script>
+</body>
+</html>
